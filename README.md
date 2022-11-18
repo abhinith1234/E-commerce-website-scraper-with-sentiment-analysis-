@@ -34,6 +34,8 @@ For other browsers you can find the links for download in this page: https://pyp
  
 ![image](https://user-images.githubusercontent.com/59814150/202731946-d6280afb-fad8-48c2-9899-f65cf111cf16.png)
 
+![image](https://user-images.githubusercontent.com/59814150/202735921-afc4ef2a-04a7-4844-9604-14de496ba50d.png)
+
 
 ## Installation
 Steps to run the application:
