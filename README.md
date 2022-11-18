@@ -2,64 +2,43 @@
 
 
 
-Happy Transformer is a package built on top of Hugging Face’s transformer library that makes it easy to utilize state-of-the-art NLP models.
+## vaderSentiment 3.3.2:
+VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media. It is fully open-sourced under the [MIT License] (we sincerely appreciate all attributions and readily accept most contributions, but please don’t hold us liable).
 
-#### Link to happy transformer github repository - https://github.com/EricFillion/happy-transformer
+Citation Information
 
-## Dataset Used:
-JFLEG (JHU FLuency-Extended GUG) is an English grammatical error correction (GEC) corpus. It is a gold standard benchmark for developing and evaluating GEC systems with respect to fluency (extent to which a text is native-sounding) as well as grammaticality. For each source document, there are four human-written corrections.
+Code examples are provided on the [VADER GitHub Repo]
 
-#### Data Fields
-  <li>sentence: original sentence written by an English learner
-  <li>corrections: corrected versions by human annotators. The order of the annotations are consistent (eg first sentence will always be written by annotator "ref0").
+Details about the scoring are provided on the [VADER GitHub Repo]
 
-#### Data Splits
-  <li>This dataset contains 1511 examples in total and comprise a dev and test split.
-  <li>There are 754 and 747 source sentences for dev and test, respectively.
-  <li>Each sentence has 4 corresponding corrected versions.
+VADER has been ported to Java, JavaScript, PHP, Scala, C#, Rust, and Go (see details and links to these on the [VADER GitHub Repo]
 
-@InProceedings{napoles-sakaguchi-tetreault:2017:EACLshort,
-  author    = {Napoles, Courtney  and  Sakaguchi, Keisuke  and  Tetreault, Joel},
-  title     = {JFLEG: A Fluency Corpus and Benchmark for Grammatical Error Correction},
-  booktitle = {Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics: Volume 2, Short Papers},
-  month     = {April},
-  year      = {2017},
-  address   = {Valencia, Spain},
-  publisher = {Association for Computational Linguistics},
-  pages     = {229--234},
-  url       = {http://www.aclweb.org/anthology/E17-2037}
-}
+Install package [https://anaconda.org/conda-forge/vadersentiment]
 
-@InProceedings{heilman-EtAl:2014:P14-2,
-  author    = {Heilman, Michael  and  Cahill, Aoife  and  Madnani, Nitin  and  Lopez, Melissa  and  Mulholland, Matthew  and  Tetreault, Joel},
-  title     = {Predicting Grammaticality on an Ordinal Scale},
-  booktitle = {Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
-  month     = {June},
-  year      = {2014},
-  address   = {Baltimore, Maryland},
-  publisher = {Association for Computational Linguistics},
-  pages     = {174--180},
-  url       = {http://www.aclweb.org/anthology/P14-2029}
-}
+#### Selenium
+To scrape the web pages, there are several libraries for web-scraping in python such as BeautifulSoup, Selenium, and Scrapy. In this article I am going to use Selenium as it can work like a real user starting from opening a browser, type a keyword in a search box and then click to find the result.
 
-## Model Architecture
+Outlines:
+1. Install Selenium and download a web driver
+2. Access the Amazon website
+3. Specify WebElement(s)
+4. Extract the data from WebElement(s)
 
-Happy transformer is transfomer model build on top of Hugging Face's transformer module. Here my model specifically is trained on top of T5 model by google.
+For other browsers you can find the links for download in this page: https://pypi.org/project/selenium/
 
-T5 is an encoder-decoder model and converts all NLP problems into a text-to-text format.    
-### The T5 Framework
-![image](https://user-images.githubusercontent.com/81613474/201695090-b6310713-a906-40b3-8bfa-1dc07e6357b8.png)
-    
-<i>A diagram of the T5 framework. Source: T5 paper.</i>
+#### UI
+  <li>The UI has been made with flask.
+  <li>Use of HTML,CSS
+ 
+![image](https://user-images.githubusercontent.com/59814150/202731946-d6280afb-fad8-48c2-9899-f65cf111cf16.png)
 
-Link to T5 paper: https://github.com/google-research/text-to-text-transfer-transformer
 
 ## Installation
 Steps to run the application:
     
 To run this code in your local system you have to download this repository using-
 
-    git clone https://github.com/nakulvarma2000/Grammar-correction.git
+    git clone https://github.com/abhinith1234/product-rec.git
 
 Now install the Happy Transformer module in anaconda prompt using:
     
@@ -67,32 +46,14 @@ Now install the Happy Transformer module in anaconda prompt using:
 
 Now open the download folder in terminal and run:
     
-    streamlit run app.py
+    python main.py
     
-## Training and Evaluation
-I have used google colab for training this model.
 
-CPU : Xeon Processors @2.3Ghz
-
-GPU : Tesla T4, 15110MiB
-
-Evaluation is done with loss of the model
+## Future Development:
+  <li>Improve the sentiment analysis model.
     
-    Loss before training: 1.2658780813217163
+  <li>Adding a recommendation system  
     
-    Loss after training: 0.30751293897628784
-    
-Here we can see that the fine-tuned model shows a significant reduction in loss.
-    
-## Working Example:    
-![image](https://user-images.githubusercontent.com/81613474/201715393-4cfa017d-65e8-48cf-ae56-e3bc158fb42e.png)
-
-## Further Modification’s:
-  <li>Improve the model with new dataset.
-    
-  <li>Run the model on high end hardware to reduce prediction latency.
-    
-  <li>Optimize the hyperparameters by applying techniques like grid search.
 
 ## Author
-#### Name: Nakul Ramesh Varma
+#### Name: Abhinith Mathew John
