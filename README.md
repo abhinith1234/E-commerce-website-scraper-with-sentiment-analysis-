@@ -2,6 +2,8 @@
 
 The growing volume of online data is accelerating business adoption of data-driven decision making strategies and it has been estimated that data-driven companies are 19 times more likely to be profitable, and are 52% better at understanding their customers. This makes web scraping crucial for businesses that rely on data, especially online e-commerce platforms which make use of publicly available data in order to analyze competitors, monitor customers, and generate leads.
 
+With a large percentage of retail activities taking place online, e-commerce web scraping offers massive potential for online retailers to differentiate and grow. Web data can enable online retailers to optimize their strategies by tracking competitors, enrich product listings, understand customers’ needs, and stay on top of market trends. 
+
 ## vaderSentiment 3.3.2:
 VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media. It is fully open-sourced under the [MIT License] (we sincerely appreciate all attributions and readily accept most contributions, but please don’t hold us liable).
 
