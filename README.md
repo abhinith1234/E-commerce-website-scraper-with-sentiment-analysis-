@@ -44,10 +44,7 @@ To run this code in your local system you have to download this repository using
 
     git clone https://github.com/abhinith1234/product-rec.git
 
-Now install the Happy Transformer module in anaconda prompt using:
     
-    pip install happytransformer
-
 Now open the download folder in terminal and run:
     
     python main.py
