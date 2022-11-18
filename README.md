@@ -4,7 +4,7 @@ The growing volume of online data is accelerating business adoption of data-driv
 
 With a large percentage of retail activities taking place online, e-commerce web scraping offers massive potential for online retailers to differentiate and grow. Web data can enable online retailers to optimize their strategies by tracking competitors, enrich product listings, understand customers’ needs, and stay on top of market trends. 
 
-## vaderSentiment 3.3.2:
+# vaderSentiment 3.3.2:
 VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media. It is fully open-sourced under the [MIT License] (we sincerely appreciate all attributions and readily accept most contributions, but please don’t hold us liable).
 
 Citation Information
@@ -17,7 +17,7 @@ VADER has been ported to Java, JavaScript, PHP, Scala, C#, Rust, and Go (see det
 
 Install package [https://anaconda.org/conda-forge/vadersentiment]
 
-#### Selenium
+## Selenium
 To scrape the web pages, there are several libraries for web-scraping in python such as BeautifulSoup, Selenium, and Scrapy. In this article I am going to use Selenium as it can work like a real user starting from opening a browser, type a keyword in a search box and then click to find the result.
 
 Outlines:
@@ -28,7 +28,7 @@ Outlines:
 
 For other browsers you can find the links for download in this page: https://pypi.org/project/selenium/
 
-#### UI
+## UI
   <li>The UI has been made with flask.
   <li>Use of HTML,CSS
  
